@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+  <meta charset="utf-8">
+  <title>Amicom</title>
+
+  <!-- mobile responsive meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  
+  <!-- ** Plugins Needed for the Project ** -->
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="plugins/bootstrap/bootstrap.min.css">
+  <!-- slick slider -->
+  <link rel="stylesheet" href="plugins/slick/slick.css">
+  <!-- themefy-icon -->
+  <link rel="stylesheet" href="plugins/themify-icons/themify-icons.css">
+  <!-- animation css -->
+  <link rel="stylesheet" href="plugins/animate/animate.css">
+  <!-- aos -->
+  <link rel="stylesheet" href="plugins/aos/aos.css">
+  <!-- venobox popup -->
+  <link rel="stylesheet" href="plugins/venobox/venobox.css">
+
+  <!-- Main Stylesheet -->
+  <link href="css/style.css" rel="stylesheet">
+  
+  <!--Favicon-->
+  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
+</head>
+
+<body>
+  
+
+<!-- header -->
+<header class="fixed-top header">
+  <!-- top header -->
+  <div class="top-header py-2 bg-white">
+    <div class="container">
+      <div class="row no-gutters">
+        <div class="col-lg-4 text-center text-lg-left">
+          <a class="text-color mr-3" href="callto:+212700499813"><strong>APPEL</strong> +212 700 499 813</a>
+          <ul class="list-inline d-inline">
+            <li class="list-inline-item mx-0"><a class="d-inline-block p-2 text-color" href="https://www.facebook.com/academiealmostakbal/"><i class="ti-facebook"></i></a></li>
+            
+            <li class="list-inline-item mx-0"><a class="d-inline-block p-2 text-color" href="https://www.linkedin.com/in/acad%C3%A9mie-al-mostakbal-pour-l-information-et-la-communication-1891a0184/"><i class="ti-linkedin"></i></a></li>
+            <li class="list-inline-item mx-0"><a class="d-inline-block p-2 text-color" href="#"><i class="ti-instagram"></i></a></li>
+          </ul>
+        </div>
+        <div class="col-lg-8 text-center text-lg-right">
+          <ul class="list-inline">
+            <li class="list-inline-item"><a class="text-uppercase text-color p-sm-2 py-2 px-0 d-inline-block" href="notice.html">annonces</a></li>
+            <li class="list-inline-item"><a class="text-uppercase text-color p-sm-2 py-2 px-0 d-inline-block" href="research.html">recherche</a></li>
+            <li class="list-inline-item"><a class="text-uppercase text-color p-sm-2 py-2 px-0 d-inline-block" href="scholarship.html">bourses</a></li>
+            <li class="list-inline-item"><a class="text-uppercase text-color p-sm-2 py-2 px-0 d-inline-block" href="#" data-toggle="modal" data-target="#loginModal">Connexion</a></li>
+            <li class="list-inline-item"><a class="text-uppercase text-color p-sm-2 py-2 px-0 d-inline-block" href="#" data-toggle="modal" data-target="#signupModal">Inscription</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- navbar -->
+  <div class="navigation w-100">
+    <div class="container">
+      <nav class="navbar navbar-expand-lg navbar-light p-0">
+        <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt="logo" class="img-fluid" style="max-height: 120px; max-width: 150px;"></a>
+        <button class="navbar-toggler rounded-0" type="button" data-toggle="collapse" data-target="#navigation"
+          aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navigation">
+          <ul class="navbar-nav ml-auto text-center">
+            <li class="nav-item @@home">
+              <a class="nav-link" href="index.html">Accueil</a>
+            </li>
+            <li class="nav-item @@about">
+              <a class="nav-link" href="about.html">À propos</a>
+            </li>
+            <li class="nav-item @@courses">
+              <a class="nav-link" href="courses.html">Formations</a>
+            </li>
+            <li class="nav-item @@events">
+              <a class="nav-link" href="events.html">Événements</a>
+            </li>
+            <li class="nav-item @@blog">
+              <a class="nav-link" href="blog.html">Blog</a>
+            </li>
+            <li class="nav-item dropdown view">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                Pages
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="teacher.html">Formateurs</a>
+                  <a class="dropdown-item" href="teacher-single.html">Profil Formateur</a>
+                  <a class="dropdown-item" href="notice.html">Annonces</a>
+                  <a class="dropdown-item" href="notice-single.html">Détails Annonce</a>
+                  <a class="dropdown-item" href="research.html">Recherche</a>
+                  <a class="dropdown-item" href="scholarship.html">Bourses</a>
+                  <a class="dropdown-item" href="course-single.html">Détails Formation</a>
+                  <a class="dropdown-item" href="event-single.html">Détails Événement</a>
+                  <a class="dropdown-item" href="blog-single.html">Article</a>
+              </div>
+            </li>
+            <li class="nav-item @@contact">
+              <a class="nav-link" href="contact.html">CONTACT</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </div>
+</header>
+<!-- /header -->
+<!-- Modal -->
+<div class="modal fade" id="signupModal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content rounded-0 border-0 p-4">
+      <div class="modal-header border-0">
+        <h3>Inscription</h3>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="login">
+                    <form action="#" class="row">
+            <div class="col-12">
+              <input type="text" class="form-control mb-3" id="signupPhone" name="signupPhone" placeholder="Téléphone">
+            </div>
+            <div class="col-12">
+              <input type="text" class="form-control mb-3" id="signupName" name="signupName" placeholder="Nom">
+            </div>
+            <div class="col-12">
+              <input type="email" class="form-control mb-3" id="signupEmail" name="signupEmail" placeholder="Email">
+            </div>
+            <div class="col-12">
+              <input type="password" class="form-control mb-3" id="signupPassword" name="signupPassword" placeholder="Mot de passe">
+            </div>
+            <div class="col-12">
+              <button type="submit" class="btn btn-primary">S'INSCRIRE</button>
+            </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Modal -->
+<div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content rounded-0 border-0 p-4">
+      <div class="modal-header border-0">
+        <h3>Connexion</h3>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form action="#" class="row">
+          <div class="col-12">
+            <input type="text" class="form-control mb-3" id="loginPhone" name="loginPhone" placeholder="Téléphone">
+          </div>
+          <div class="col-12">
+            <input type="text" class="form-control mb-3" id="loginName" name="loginName" placeholder="Nom">
+          </div>
+          <div class="col-12">
+            <input type="password" class="form-control mb-3" id="loginPassword" name="loginPassword" placeholder="Mot de passe">
+          </div>
+          <div class="col-12">
+            <button type="submit" class="btn btn-primary">SE CONNECTER</button>
+          </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- page title -->
+<section class="page-title-section overlay" data-background="images/backgrounds/page-title.jpg">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8">
+        <ul class="list-inline custom-breadcrumb">
+          <li class="list-inline-item"><a class="h2 text-primary font-secondary" href="@@page-link">Annonces</a></li>
+          <li class="list-inline-item text-white h3 font-secondary @@nasted"></li>
+        </ul>
+        <p class="text-lighten">Retrouvez ici les dernières annonces de l'académie — appels à candidatures, communications officielles et informations pratiques pour nos étudiants et partenaires.</p>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /page title -->
+
+<!-- notice -->
+<section class="section">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <ul class="list-unstyled">
+          <!-- notice item -->
+          <li class="d-md-table mb-4 w-100 border-bottom hover-shadow">
+            <div class="d-md-table-cell text-center p-4 bg-primary text-white mb-4 mb-md-0"><span class="h2 d-block">18</span> octobre 2025</div>
+            <div class="d-md-table-cell px-4 vertical-align-middle mb-4 mb-md-0">
+              <a href="notice-single.html" class="h4 mb-3 d-block">Matériel pédagogique et méthodes d'évaluation</a>
+              <p class="mb-0">L'académie met à jour ses ressources pédagogiques pour aligner les évaluations sur les standards internationaux. Consultez le dossier complet pour les détails et les dates importantes.</p>
+            </div>
+            <div class="d-md-table-cell text-right pr-0 pr-md-4"><a href="notice-single.html" class="btn btn-primary">lire la suite</a></div>
+          </li>
+          <!-- notice item -->
+          <li class="d-md-table mb-4 w-100 border-bottom hover-shadow">
+            <div class="d-md-table-cell text-center p-4 bg-primary text-white mb-4 mb-md-0"><span class="h2 d-block">18</span> octobre 2025</div>
+            <div class="d-md-table-cell px-4 vertical-align-middle mb-4 mb-md-0">
+              <a href="notice-single.html" class="h4 mb-3 d-block">Appel à contributions pour la revue de l'académie</a>
+              <p class="mb-0">Nous invitons les chercheurs et professionnels à soumettre des articles pour le prochain numéro. Thèmes prioritaires : communication, médias et innovation sociale.</p>
+            </div>
+            <div class="d-md-table-cell text-right pr-0 pr-md-4"><a href="notice-single.html" class="btn btn-primary">lire la suite</a></div>
+          </li>
+          <!-- notice item -->
+          <li class="d-md-table mb-4 w-100 border-bottom hover-shadow">
+            <div class="d-md-table-cell text-center p-4 bg-primary text-white mb-4 mb-md-0"><span class="h2 d-block">18</span> octobre 2025</div>
+            <div class="d-md-table-cell px-4 vertical-align-middle mb-4 mb-md-0">
+              <a href="notice-single.html" class="h4 mb-3 d-block">Mise à jour du calendrier pédagogique</a>
+              <p class="mb-0">Le calendrier des sessions et des évaluations a été révisé pour la prochaine année académique. Vérifiez les dates et procédez à votre inscription si nécessaire.</p>
+            </div>
+            <div class="d-md-table-cell text-right pr-0 pr-md-4"><a href="notice-single.html" class="btn btn-primary">lire la suite</a></div>
+          </li>
+          <!-- notice item -->
+          <li class="d-md-table mb-4 w-100 border-bottom hover-shadow">
+            <div class="d-md-table-cell text-center p-4 bg-primary text-white mb-4 mb-md-0"><span class="h2 d-block">18</span> octobre 2025</div>
+            <div class="d-md-table-cell px-4 vertical-align-middle mb-4 mb-md-0">
+              <a href="notice-single.html" class="h4 mb-3 d-block">Résultats provisoires et liste des admis</a>
+              <p class="mb-0">Les listes provisoires des candidats admis sont publiées. Les réclamations éventuelles doivent être adressées au secrétariat dans les 7 jours ouvrables.</p>
+            </div>
+            <div class="d-md-table-cell text-right pr-0 pr-md-4"><a href="notice-single.html" class="btn btn-primary">lire la suite</a></div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /notice -->
+
+<!-- footer -->
+<footer>
+  <!-- newsletter -->
+  <div class="newsletter">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-9 ml-auto bg-primary py-5 newsletter-block">
+          <h3 class="text-white">Subscribe Now</h3>
+          <form action="#">
+            <div class="input-wrapper">
+              <input type="email" class="form-control border-0" id="newsletter" name="newsletter" placeholder="Enter Your Email...">
+              <button type="submit" value="send" class="btn btn-primary">Join</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- footer content -->
+  <div class="footer bg-footer section border-bottom">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 col-sm-8 mb-5 mb-lg-0">
+          <!-- logo -->
+          <a class="logo-footer" href="index.html"><img class="img-fluid mb-4" src="images/logo.png" alt="logo"></a>
+          <ul class="list-unstyled">
+            <li class="mb-2">حسان، 113 Av. Allal Ben Abdellah, Rabat 10000</li>
+            <li class="mb-2">Phone: +212700-499813</li>
+            <li class="mb-2">academiealmostakbal@gmail.com</li>
+          </ul>
+        </div>
+        <!-- company -->
+        <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-5 mb-md-0">
+          <h4 class="text-white mb-5">À PROPOS</h4>
+          <ul class="list-unstyled">
+            <li class="mb-3"><a class="text-color" href="about.html">À propos</a></li>
+            <li class="mb-3"><a class="text-color" href="teacher.html">Nos formateurs</a></li>
+            <li class="mb-3"><a class="text-color" href="contact.html">Contact</a></li>
+            <li class="mb-3"><a class="text-color" href="blog.html">Actualités</a></li>
+          </ul>
+        </div>        <!-- links -->
+        <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-5 mb-md-0">
+          <h4 class="text-white mb-5">LIENS</h4>
+          <ul class="list-unstyled">
+            <li class="mb-3"><a class="text-color" href="courses.html">Formations</a></li>
+            <li class="mb-3"><a class="text-color" href="event.html">Événements</a></li>
+            <li class="mb-3"><a class="text-color" href="gallary.html">Galerie</a></li>
+            <li class="mb-3"><a class="text-color" href="faqs.html">FAQ</a></li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <!-- copyright -->
+  <div class="copyright py-4 bg-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-7 text-sm-left text-center">
+          <p class="mb-0">Copyright
+            <script>
+              var CurrentYear = new Date().getFullYear()
+              document.write(CurrentYear)
+            </script> 
+            © Theme By <a >Amicom</a></p> . All Rights Reserved.
+        </div>
+        <div class="col-sm-5 text-sm-right text-center">
+          <ul class="list-inline">
+            <li class="list-inline-item"><a class="d-inline-block p-2" href="https://www.facebook.com/themefisher"><i class="ti-facebook text-primary"></i></a></li>
+            <li class="list-inline-item"><a class="d-inline-block p-2" href="https://www.twitter.com/themefisher"><i class="ti-twitter-alt text-primary"></i></a></li>
+            <li class="list-inline-item"><a class="d-inline-block p-2" href="#"><i class="ti-instagram text-primary"></i></a></li>
+            <li class="list-inline-item"><a class="d-inline-block p-2" href="https://dribbble.com/themefisher"><i class="ti-dribbble text-primary"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+<!-- /footer -->
+
+<!-- jQuery -->
+<script src="plugins/jQuery/jquery.min.js"></script>
+<!-- Bootstrap JS -->
+<script src="plugins/bootstrap/bootstrap.min.js"></script>
+<!-- slick slider -->
+<script src="plugins/slick/slick.min.js"></script>
+<!-- aos -->
+<script src="plugins/aos/aos.js"></script>
+<!-- venobox popup -->
+<script src="plugins/venobox/venobox.min.js"></script>
+<!-- mixitup filter -->
+<script src="plugins/mixitup/mixitup.min.js"></script>
+<!-- google map -->
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCcABaamniA6OL5YvYSpB3pFMNrXwXnLwU&libraries=places"></script>
+<script src="plugins/google-map/gmap.js"></script>
+
+<!-- Main Script -->
+<script src="js/script.js"></script>
+
+</body>
+</html>
